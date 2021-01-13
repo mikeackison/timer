@@ -12,6 +12,7 @@ for (let i of input) {
     return
   } else {
     setTimeout(function () {
+      console.log(`ALARM for ${i} seconds`)
       process.stdout.write('\x07')
       // in the setTimeout funtion mulitply the array elements by 1000 (to get a second)
       // in the callback
